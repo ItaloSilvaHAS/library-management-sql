@@ -46,6 +46,7 @@ biblioteca-sql/
 ├── inserts_exemplo.sql         # Dados fictícios para testes
 ├── emprestimos_devolucoes.sql  # Simulações de empréstimos e devoluções
 └── views_e_queries.sql         # Views e consultas úteis para análise
+```
 
 ## ▶️ Como Executar o Projeto
 
