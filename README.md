@@ -111,3 +111,27 @@ JOIN usuarios u ON e.id_usuario = u.id
 GROUP BY u.nome
 HAVING COUNT(*) > 1;
 ```
+
+## 📌 Possíveis Expansões Futuras
+
+- Interface em Python, JavaScript ou Java  
+- Login de usuário com autenticação  
+- Relatórios automáticos  
+- Backup e restore com scripts  
+- Triggers para impedir empréstimos de livros sem estoque  
+- Stored procedures para devoluções automáticas  
+
+---
+
+## 👨‍💻 Autor
+
+**Ítalo S.**  
+Estudante de Análise e Desenvolvimento de Sistemas  
+Futuro DBA em formação 🚀  
+[LinkedIn](#) • [GitHub](#)
+
+---
+
+## 📃 Licença
+
+Este projeto é livre para uso educacional. Modifique e distribua como quiser! 🎓
