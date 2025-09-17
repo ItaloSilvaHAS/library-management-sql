@@ -53,3 +53,16 @@ biblioteca-sql/
 ### 🔧 1. Crie o banco de dados:
 ```sql
 CREATE DATABASE biblioteca;
+```
+
+## 🔗 2. Conecte-se ao banco:
+
+### No PostgreSQL:
+```sql
+\c biblioteca
+
+### No MySQL:
+
+USE biblioteca;
+```
+
