@@ -60,9 +60,46 @@ CREATE DATABASE biblioteca;
 ### No PostgreSQL:
 ```sql
 \c biblioteca
+```
 
 ### No MySQL:
 
+```
 USE biblioteca;
 ```
+
+## 🏗️ 3. Crie as tabelas:
+
+Execute o conteúdo do arquivo `create_tables.sql`.
+
+---
+
+## 🧪 4. Insira dados de exemplo:
+
+Execute `inserts_exemplo.sql` para popular o banco com autores, livros e usuários.
+
+---
+
+## 🔁 5. Simule empréstimos e devoluções:
+
+Rode os scripts em `emprestimos_devolucoes.sql`.
+
+---
+
+## 🔍 6. Explore as views e consultas:
+
+Execute `views_e_queries.sql` para ver relatórios e análises dos dados.
+
+---
+
+## 🔍 Exemplos de Consultas
+
+### 📚 Livros atualmente emprestados:
+```sql
+SELECT u.nome, l.titulo, e.data_emprestimo
+FROM emprestimos e
+JOIN usuarios u ON e.id_usuario = u.id
+JOIN livros l ON e.id_livro = l.id
+WHERE e.data_devolucao IS NULL;
+
 
