@@ -101,5 +101,13 @@ FROM emprestimos e
 JOIN usuarios u ON e.id_usuario = u.id
 JOIN livros l ON e.id_livro = l.id
 WHERE e.data_devolucao IS NULL;
+```
 
 
+### 👥 Usuários com mais de um empréstimo:
+```SELECT u.nome, COUNT(*) AS total_emprestimos
+FROM emprestimos e
+JOIN usuarios u ON e.id_usuario = u.id
+GROUP BY u.nome
+HAVING COUNT(*) > 1;
+```
